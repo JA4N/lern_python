@@ -1,7 +1,7 @@
 import tkinter as tk
 from logging import root
 
-
+#GUI Template
 class Application (tk.Frame):
     def __init__(self, master = None):
         super().__init__(master)
