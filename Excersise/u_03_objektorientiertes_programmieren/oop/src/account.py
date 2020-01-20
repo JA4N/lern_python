@@ -23,6 +23,7 @@ class Account(object):
         Gibt den aktuellen Kontostand auf der Konsole aus
         """
         print("Balance: {}".format(self.__balance))
+        print("Balance: " + format(self.__balance))
 
     def deposit(self, amount):
         """
@@ -30,6 +31,7 @@ class Account(object):
         :param amount: Betrag der auf das Konto eingezahlt werden soll.
         """
         self.__balance += amount
+        self.__balance = self.__balance + amount
 
     def withdraw(self, amount):
         """

@@ -13,6 +13,25 @@ Wenn die Klammern leer bleiben wird eine Instanz von "Customer" ohne parameter e
 """
 c = Customer("Max", "Mustermann")
 """
+Es wird nur der Vorname überschrieben. Die Standartwerde sind in der __init__ im Rumpf angegeben
+"""
+customer1 = Customer("Jan")
+print(customer1.get_first_name())
+print(customer1.get_last_name())
+
+customer2 = Customer("John", "Mayer", "12.04.1942")
+print(customer2.getgeburtstag())
+
+
+customer3 = Customer()
+customer3.set_first_name("Helmut")
+print(customer3.get_first_name())
+
+account2 = Account(customer2, 100)
+print(account2.get_balance())
+print(account2.get_owner())
+print(customer2.get_first_name())
+"""
 In der Init-Methode von "Account" gibt es den Parameter "owner" vom Typ Customer
 """
 a1 = Account(c)

@@ -1,10 +1,12 @@
 class Customer:
 
-    def __init__(self, vorname="", nachname=""):
+    def __init__(self, vorname="Max", nachname="Lindheimer", geburtstag = "00.00.0000"):
         # Vorname des Kunden
         self.__first_name = vorname
         # Nachname des Kunden
         self.__last_name = nachname
+        # Geburtstag des Kunden
+        self.__geburtstag = geburtstag
 
     def get_first_name(self):
         """
@@ -35,3 +37,6 @@ class Customer:
         :return: None
         """
         self.__last_name = nachname
+
+    def getgeburtstag (self):
+        return self.__geburtstag
