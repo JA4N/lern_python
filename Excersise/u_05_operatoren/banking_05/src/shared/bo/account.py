@@ -14,6 +14,8 @@ class Account (bo.BusinessObject):
         self.__interest_rate = 5.0
         # Kontostand
         self.__balance = 0.0
+        # Kreditrahmen
+        self.__kreditrahmen = -1500
 
     def get_owner(self):
         """
@@ -52,10 +54,10 @@ class Account (bo.BusinessObject):
         self.__balance = balance
 
     def get_credit_line(self):
-        pass
+        return self.__kreditrahmen
 
     def set_credit_line(self, credit_line):
-        pass
+        self.__kreditrahmen = credit_line
 
     def get_interest(self):
         """
@@ -65,10 +67,16 @@ class Account (bo.BusinessObject):
         return self.get_balance() * (self.get_interest_rate() / 100)
 
     def is_balance_alert(self):
-        pass
+        #Rechnung für weniger als 5% auf Konto
+        erg = self.__balance * 0.05
+        if self.__balance < erg:
+            return True
 
     def is_overdraw_amount(self, amount):
-        pass
+        #Zwischenrechnung: Geld wird abgehoben
+        erg = self.__balance - amount
+        if erg < self.__kreditrahmen:
+            return True
 
     def __str__(self):
         return "Account: {}, owned by {}".format(self.get_id(), self._owner)

@@ -11,10 +11,11 @@ Es wird eine Instanz vom Typ "Customer" erzeugt. Die Init-Methode erwartet zwei 
 Diese beiden Strings müssen beim erzeugen mitgegeben werden. Ansonsten wird eine Exception geschmissen.
 Wenn die Klammern leer bleiben wird eine Instanz von "Customer" ohne parameter erzeugt.
 """
-c = Customer("Max", "Mustermann")
+c = Customer("Jan", "Test");
 """
 Es wird nur der Vorname überschrieben. Die Standartwerde sind in der __init__ im Rumpf angegeben
 """
+
 customer1 = Customer("Jan")
 print(customer1.get_first_name())
 print(customer1.get_last_name())

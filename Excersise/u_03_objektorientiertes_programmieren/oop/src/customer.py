@@ -1,6 +1,6 @@
 class Customer:
 
-    def __init__(self, vorname="Max", nachname="Lindheimer", geburtstag = "00.00.0000"):
+    def __init__(self, vorname="jenni", nachname="Lindheimer", geburtstag="00.00.000"):
         # Vorname des Kunden
         self.__first_name = vorname
         # Nachname des Kunden
