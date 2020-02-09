@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Excersise/u_03_objektorientiertes_programmieren/banking_03/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Excersise/u_04_variablen/banking_04/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Excersise/u_05_operatoren/banking_05/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Excersise/u_09_objektgrundlagen/banking_09/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Excersise/u_08_kontrollfluss/banking_08/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
