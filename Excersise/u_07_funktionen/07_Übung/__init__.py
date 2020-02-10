@@ -72,7 +72,6 @@ print(find_max_of_list(1, 2, 3, 4, 5, 6, 7, 32, 4, 6))
 """
 #Aufgabe 6
 """
-c = input("Geben Sie einen Text ein")
 def berechne(text):
     großbuchstaben = 0;
     kleinbuchstaben = 0;
@@ -86,4 +85,6 @@ def berechne(text):
     print("Originaltext: " + text)
     print("Anzahl Großbuchstaben: " + str(großbuchstaben))
     print("Anzahl Kleinbuchstaben: " + str(kleinbuchstaben))
+
+c = berechne(input("Geben Sie einen Text ein"))
 """
